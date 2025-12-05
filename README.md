@@ -52,3 +52,12 @@ pip install -e .
 # Run a sample worksheet (dry-run, safe)
 sre-toolkit run examples/simple-start-stop.yaml
 
+
+## Roadmap
+
+- Add snapshot_volume and cleanup_snapshots operations
+- Add EC2 rehydrate_instance (experimental)
+- Add input validation for operation parameters
+- Add status and result reporting per operation
+- Add CI workflow for linting and tests
+
