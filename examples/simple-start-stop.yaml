@@ -1,0 +1,10 @@
+aws_profile: default
+region: us-east-1
+dry_run: true
+
+operations:
+  - type: start_instance
+    instance_id: i-0123456789abcdef0
+
+  - type: stop_instance
+    instance_id: i-0123456789abcdef0

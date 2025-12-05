@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sre-orchestration-toolkit"
+version = "0.1.0"
+description = "YAML-driven SRE orchestration toolkit for AWS (start/stop/rehydrate instances, snapshots, and more)."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+license = { text = "MIT" }
+dependencies = [
+  "boto3>=1.34.0",
+  "PyYAML>=6.0.0",
+  "python-dotenv>=1.0.0",
+  "click>=8.1.0"
+]
+
+[project.scripts]
+sre-toolkit = "sre_orchestration_toolkit.cli:cli"
