@@ -9,7 +9,11 @@ from .core.logging_utils import configure_logging
 
 
 @click.group()
-@click.option("--log-level", default="INFO", help="Logging level (DEBUG, INFO, WARNING, ERROR)")
+@click.option(
+    "--log-level",
+    default="INFO",
+    help="Logging level (DEBUG, INFO, WARNING, ERROR).",
+)
 def cli(log_level: str) -> None:
     """SRE Orchestration Toolkit CLI."""
     configure_logging(level=log_level)
