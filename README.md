@@ -35,3 +35,20 @@ operations:
     preserve_tags: true
     validate_health: true
 
+## Quickstart
+
+```bash
+# Clone
+git clone https://github.com/DaltonInCloudx0/sre-orchestration-toolkit.git
+cd sre-orchestration-toolkit
+
+# Create a virtualenv
+python -m venv .venv
+source .venv/Scripts/activate  # Git Bash on Windows
+
+# Install in editable mode
+pip install -e .
+
+# Run a sample worksheet (dry-run, safe)
+sre-toolkit run examples/simple-start-stop.yaml
+
